@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   height: 400,
                   decoration: const BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage('assets/logos/splash.png'))),
+                          image: AssetImage('assets/logos/splash.gif'))),
                 ),
               ],
             ),

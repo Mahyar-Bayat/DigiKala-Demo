@@ -1,5 +1,5 @@
-import 'package:digikala_demo/screens/general_pages/cart_screen.dart';
 import 'package:digikala_demo/screens/general_pages/category_screen.dart';
+import 'package:digikala_demo/screens/general_pages/cart_screen.dart';
 import 'package:digikala_demo/screens/general_pages/my_digikala_screen.dart';
 import 'package:digikala_demo/screens/login/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -23,9 +23,9 @@ class DigiKala extends StatelessWidget {
         '/splash_screen': (context) => const Directionality(
             textDirection: TextDirection.ltr, child: SplashScreen()),
         '/category': (context) => const Directionality(
-            textDirection: TextDirection.ltr, child: CategoryScreen()),
-        'cart': (context) => const Directionality(
             textDirection: TextDirection.ltr, child: CartScreen()),
+        'cart': (context) => const Directionality(
+            textDirection: TextDirection.ltr, child: CategoryScreen()),
         'my_digikala': (context) => const Directionality(
             textDirection: TextDirection.ltr, child: MyDigikalaScreen()),
       },

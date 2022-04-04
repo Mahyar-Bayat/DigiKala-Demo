@@ -1,7 +1,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:digikala_demo/Constants/Constants.dart';
-import 'package:digikala_demo/screens/general_pages/cart_screen.dart';
 import 'package:digikala_demo/screens/general_pages/category_screen.dart';
+import 'package:digikala_demo/screens/general_pages/cart_screen.dart';
 import 'package:digikala_demo/screens/general_pages/home_screen.dart';
 import 'package:digikala_demo/screens/general_pages/my_digikala_screen.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +16,8 @@ class Home extends StatefulWidget {
 class HomeState extends State<Home> {
   int pageIndex = 0;
   final HomeScreen _homeScreen = const HomeScreen();
-  final CartScreen _cartScreen = const CartScreen();
   final CategoryScreen _categoryScreen = const CategoryScreen();
+  final CartScreen _cartScreen = const CartScreen();
   final MyDigikalaScreen _digikalaScreen = const MyDigikalaScreen();
 
   Widget _showPage = const HomeScreen();
@@ -27,9 +27,9 @@ class HomeState extends State<Home> {
       case 0:
         return _homeScreen;
       case 1:
-        return _cartScreen;
-      case 2:
         return _categoryScreen;
+      case 2:
+        return _cartScreen;
       case 3:
         return _digikalaScreen;
     }
